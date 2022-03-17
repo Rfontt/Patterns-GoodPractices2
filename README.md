@@ -16,10 +16,22 @@ On the other hand, the store could send tons of emails(which might be considered
 
 It looks like we've got a conflict. Either the customer wastes time checking product availability or the store wastes resources notifying the wrong customers.
 
-# Solution
+### Solution
 
 The object that has some interesting state is often called subject, but since it's also going to notify other objects about the changes to its state, we'll call it publisher. All other objects that want to track changes to the publisher's state are called subscribers.
 
 The Observer pattern suggests that you add a subscription mechanism to the publisher class so individual objects can subscribe to or unsubscribe from a stream of events coming from that publisher.
 
 Now, whenever an important event happens to the publisher, it goes over its subscribers and call the specific notification method on their objects.
+
+# Template Method
+
+### Template in the Real World
+
+The **template method** pattern is used when two or more implementations of a similar algorithm exist. In the real world templates are used all the time: for architectural plans, and throughout(ao longo) the engineering domain. A template plan may be defined which is then built(construído) on with further variations. For example, a basic house plan can have many variations such as adding an extensions or using a different heating system.
+
+### The Template Pattern
+
+The Template Method pattern is known as a behavioural pattern, as it's used to manage algorithms, relationships and responsibilities between objects. The definition of Template Method provided in the original Gang of Four book on Design Patterns states:
+
+**Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithms structure.**
