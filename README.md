@@ -35,3 +35,11 @@ The **template method** pattern is used when two or more implementations of a si
 The Template Method pattern is known as a behavioural pattern, as it's used to manage algorithms, relationships and responsibilities between objects. The definition of Template Method provided in the original Gang of Four book on Design Patterns states:
 
 **Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithms structure.**
+
+# Decorator Method
+
+The **decorator method** intercepts some function.
+
+# Adapter 
+
+In software engineering, the adapter pattern is a software design pattern (also known as wrapper, an alternative naming shared with the decorator pattern) that allows the interface of an existing class to be used as another interface.
